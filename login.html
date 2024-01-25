@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <label for="username">Username :</label>
+        <input type="text" id="username" placeholder="Enter Username"> 
+        <label for="password">Password :</label>
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="login()">Login</button>
+    </div>
+</body>
+<script type="text/javascript">
+    function login(){
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+
+        var correctUsername = '12345';
+        var correctPassword = 'ABCDE';
+        var correctUsername2 = '123456';
+        var correctPassword2 = 'ABCDEF';
+        
+        if(username === correctUsername && password === correctPassword) {
+            alert('Login Success');
+            window.location.href = 'latihan1.html';
+        } else if(username === correctUsername2 && password === correctPassword2) {
+            alert('Login Success');
+            window.location.href = 'latihan1.html';
+        } else {
+            alert('Login Failed');
+        }
+    }
+</script>
+</html>
